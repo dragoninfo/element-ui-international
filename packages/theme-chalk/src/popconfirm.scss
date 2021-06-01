@@ -1,0 +1,20 @@
+@import "mixins/mixins";
+@import "common/var";
+@import "mixins/rtl";
+
+@include b(popconfirm) {
+  @include e(main) {
+    display: flex;
+    align-items: center;
+  }
+  @include e(icon) {
+    // margin-right: 5px;
+    @include turnNameKeyVal(margin, right, 5px);
+
+  }
+  @include e(action) {
+    // text-align: right;
+    @include turnNameKey(text-align, right);
+    margin: 0
+  }
+}

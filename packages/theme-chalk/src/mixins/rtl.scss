@@ -1,0 +1,69 @@
+@import "./mixins";
+
+// 转阿语化的通用方法
+@mixin turnKeyVal($key, $val) { // left, 20rem
+  @include rtlMixin {
+    #{getDirection($key)}: $val; // left: 20rem
+  }
+}
+
+@mixin turnNameKey($name, $key) { // transform, rotateY(0)   || float,left
+  @include rtlMixin {
+    #{$name}: getDirection($key), // transform: rotateY(0)   || float:left
+  }
+}
+
+// 获取内外边距通用方法
+@mixin turnNameKeyVal($name, $key, $val) { // padding,left,20rem
+  @include rtlMixin {
+    #{$name}-#{getDirection($key)}: $val; // padding-left: 20rem
+  }
+}
+
+// ltrByKey, ltrByVal, ltrByName
+
+// 获取边框宽度
+@mixin borderWidth($key, $val) { // l, 1px
+  @include rtlMixin {
+    border-#{getDirection($key)}-width: $val; // border-left-width: 1px
+  }
+}
+
+// border
+@mixin border($key, $val) { // right, 0
+  @include rtlMixin {
+    border-#{getDirection($key)}: $val; // border-right: 0
+  }
+}
+// 上左/右边框的圆角
+@mixin borderTopRadius($key, $val) { // right, 0
+  @include rtlMixin {
+    border-top-#{getDirection($key)}-radius: $val; // border-top-right-radius: 0;
+  }
+}
+// 下左/右边框的圆角
+@mixin borderBottomRadius($key, $val) { // right, 0
+  @include rtlMixin {
+    border-bottom-#{getDirection($key)}-radius: $val; // border-bottom-right-radius: 0;
+  }
+}
+
+// 圆角4个值合写
+@mixin borderRadiusFourVal($topLeftVal,$topRightVal,$rightbottomVal,$leftBottomVal) {
+  @include rtlMixin {
+    border-top-#{getDirection(left)}-radius: $topLeftVal;
+    border-top-#{getDirection(right)}-radius: $topRightVal;
+    border-bottom-#{getDirection(right)}-radius: $rightbottomVal;
+    border-bottom-#{getDirection(left)}-radius: $leftBottomVal;
+  }
+}
+
+// margin padding 四个值合写
+@mixin marginPaddingFourVal($name,$topVal,$rightVal,$bottomVal,$leftVal) {
+  @include rtlMixin {
+    #{$name}-top: $topVal;
+    #{$name}-bottom: $bottomVal;
+    #{$name}-#{getDirection(left)}: $leftVal;
+    #{$name}-#{getDirection(right)}: $rightVal;
+  }
+}

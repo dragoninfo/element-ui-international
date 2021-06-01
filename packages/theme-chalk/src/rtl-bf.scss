@@ -1,0 +1,37 @@
+// 动画备份
+  @keyframes slideInRight-enter {
+    0% {
+      transform: translateX(100%)
+    }
+
+    to {
+      transform: translateX(0)
+    }
+  }
+  @keyframes slideInRight-leave {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @keyframes slideInLeft-enter {
+    0% {
+      transform: translateX(-100%)
+    }
+
+    to {
+      transform: translateX(0)
+    }
+  }
+  @keyframes slideInLeft-leave {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
