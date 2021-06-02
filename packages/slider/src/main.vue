@@ -74,11 +74,11 @@
 </template>
 
 <script type="text/babel">
-  import ElInputNumber from 'element-ui/packages/input-number';
+  import ElInputNumber from 'element-ui-international/packages/input-number';
   import SliderButton from './button.vue';
   import SliderMarker from './marker';
-  import Emitter from 'element-ui/src/mixins/emitter';
-  import { isRtl } from 'element-ui/src/utils/util';
+  import Emitter from 'element-ui-international/src/mixins/emitter';
+  import { isRtl } from 'element-ui-international/src/utils/util';
 
   export default {
     name: 'ElSlider',

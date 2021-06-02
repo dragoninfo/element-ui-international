@@ -31,7 +31,7 @@
 </template>
 
 <script type="text/babel">
-  import { isRtl } from 'element-ui/src/utils/util';
+  import { isRtl } from 'element-ui-international/src/utils/util';
   export default {
     name: 'ElPager',
 

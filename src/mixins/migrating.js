@@ -1,9 +1,9 @@
-import { kebabCase } from 'element-ui/src/utils/util';
+import { kebabCase } from 'element-ui-international/src/utils/util';
 /**
  * Show migrating guide in browser console.
  *
  * Usage:
- * import Migrating from 'element-ui/src/mixins/migrating';
+ * import Migrating from 'element-ui-international/src/mixins/migrating';
  *
  * mixins: [Migrating]
  *

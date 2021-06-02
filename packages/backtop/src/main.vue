@@ -14,7 +14,7 @@
 
 <script>
 import throttle from 'throttle-debounce/throttle';
-import { isRtl } from 'element-ui/src/utils/util';
+import { isRtl } from 'element-ui-international/src/utils/util';
 
 const cubic = value => Math.pow(value, 3);
 const easeInOutCubic = value => value < 0.5

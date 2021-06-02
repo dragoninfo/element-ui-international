@@ -28,8 +28,8 @@
 </template>
 
 <script>
-  import ElTooltip from 'element-ui/packages/tooltip';
-  import { isRtl } from 'element-ui/src/utils/util';
+  import ElTooltip from 'element-ui-international/packages/tooltip';
+  import { isRtl } from 'element-ui-international/src/utils/util';
 
   export default {
     name: 'ElSliderButton',

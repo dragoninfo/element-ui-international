@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import { t } from 'element-ui/src/locale';
-import { isRtl } from 'element-ui/src/utils/util';
+import { t } from 'element-ui-international/src/locale';
+import { isRtl } from 'element-ui-international/src/utils/util';
 
 export default {
   name: 'ElPageHeader',

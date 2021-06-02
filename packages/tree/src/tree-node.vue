@@ -72,11 +72,11 @@
 </template>
 
 <script type="text/jsx">
-  import ElCollapseTransition from 'element-ui/src/transitions/collapse-transition';
-  import ElCheckbox from 'element-ui/packages/checkbox';
-  import emitter from 'element-ui/src/mixins/emitter';
+  import ElCollapseTransition from 'element-ui-international/src/transitions/collapse-transition';
+  import ElCheckbox from 'element-ui-international/packages/checkbox';
+  import emitter from 'element-ui-international/src/mixins/emitter';
   import { getNodeKey } from './model/util';
-  import { isRtl } from 'element-ui/src/utils/util';
+  import { isRtl } from 'element-ui-international/src/utils/util';
 
   export default {
     name: 'ElTreeNode',

@@ -1,8 +1,8 @@
-import { arrayFindIndex } from 'element-ui/src/utils/util';
+import { arrayFindIndex } from 'element-ui-international/src/utils/util';
 import { getCell, getColumnByCell, getRowIdentity } from './util';
-import { getStyle, hasClass, removeClass, addClass } from 'element-ui/src/utils/dom';
-import ElCheckbox from 'element-ui/packages/checkbox';
-import ElTooltip from 'element-ui/packages/tooltip';
+import { getStyle, hasClass, removeClass, addClass } from 'element-ui-international/src/utils/dom';
+import ElCheckbox from 'element-ui-international/packages/checkbox';
+import ElTooltip from 'element-ui-international/packages/tooltip';
 import debounce from 'throttle-debounce/debounce';
 import LayoutObserver from './layout-observer';
 import { mapStates } from './store/helper';

@@ -112,21 +112,21 @@
 </template>
 
 <script>
-import Popper from 'element-ui/src/utils/vue-popper';
-import Clickoutside from 'element-ui/src/utils/clickoutside';
-import Emitter from 'element-ui/src/mixins/emitter';
-import Locale from 'element-ui/src/mixins/locale';
-import Migrating from 'element-ui/src/mixins/migrating';
-import ElInput from 'element-ui/packages/input';
-import ElTag from 'element-ui/packages/tag';
-import ElScrollbar from 'element-ui/packages/scrollbar';
-import ElCascaderPanel from 'element-ui/packages/cascader-panel';
-import AriaUtils from 'element-ui/src/utils/aria-utils';
-import { t } from 'element-ui/src/locale';
-import { isEqual, isEmpty, kebabCase } from 'element-ui/src/utils/util';
-import { isUndefined, isFunction } from 'element-ui/src/utils/types';
-import { isDef } from 'element-ui/src/utils/shared';
-import { addResizeListener, removeResizeListener } from 'element-ui/src/utils/resize-event';
+import Popper from 'element-ui-international/src/utils/vue-popper';
+import Clickoutside from 'element-ui-international/src/utils/clickoutside';
+import Emitter from 'element-ui-international/src/mixins/emitter';
+import Locale from 'element-ui-international/src/mixins/locale';
+import Migrating from 'element-ui-international/src/mixins/migrating';
+import ElInput from 'element-ui-international/packages/input';
+import ElTag from 'element-ui-international/packages/tag';
+import ElScrollbar from 'element-ui-international/packages/scrollbar';
+import ElCascaderPanel from 'element-ui-international/packages/cascader-panel';
+import AriaUtils from 'element-ui-international/src/utils/aria-utils';
+import { t } from 'element-ui-international/src/locale';
+import { isEqual, isEmpty, kebabCase } from 'element-ui-international/src/utils/util';
+import { isUndefined, isFunction } from 'element-ui-international/src/utils/types';
+import { isDef } from 'element-ui-international/src/utils/shared';
+import { addResizeListener, removeResizeListener } from 'element-ui-international/src/utils/resize-event';
 import debounce from 'throttle-debounce/debounce';
 
 const { keys: KeyCode } = AriaUtils;

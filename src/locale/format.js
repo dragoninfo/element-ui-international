@@ -6,7 +6,7 @@
  * @LastEditors: wenzch
  * @LastEditTime: 2021-05-27 09:00:27
  */
-import { hasOwn } from 'element-ui/src/utils/util';
+import { hasOwn } from 'element-ui-international/src/utils/util';
 
 const RE_NARGS = /(%|)\{([0-9a-zA-Z_]+)\}/g;
 /**
