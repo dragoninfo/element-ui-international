@@ -1,3 +1,11 @@
+/*
+ * @Descripttion:
+ * @version: feature-2.1.0
+ * @Author: wenzch
+ * @Date: 2021-05-10 10:09:19
+ * @LastEditors: wenzch
+ * @LastEditTime: 2021-06-02 10:18:50
+ */
 var path = require('path');
 var fs = require('fs');
 var nodeExternals = require('webpack-node-externals');
@@ -9,21 +17,21 @@ var transitionList = fs.readdirSync(path.resolve(__dirname, '../src/transitions'
 var externals = {};
 
 Object.keys(Components).forEach(function(key) {
-  externals[`element-ui/packages/${key}`] = `element-ui/lib/${key}`;
+  externals[`element-ui/packages/${key}`] = `element-ui-international/lib/${key}`;
 });
 
-externals['element-ui/src/locale'] = 'element-ui/lib/locale';
+externals['element-ui/src/locale'] = 'element-ui-international/lib/locale';
 utilsList.forEach(function(file) {
   file = path.basename(file, '.js');
-  externals[`element-ui/src/utils/${file}`] = `element-ui/lib/utils/${file}`;
+  externals[`element-ui/src/utils/${file}`] = `element-ui-international/lib/utils/${file}`;
 });
 mixinsList.forEach(function(file) {
   file = path.basename(file, '.js');
-  externals[`element-ui/src/mixins/${file}`] = `element-ui/lib/mixins/${file}`;
+  externals[`element-ui/src/mixins/${file}`] = `element-ui-international/lib/mixins/${file}`;
 });
 transitionList.forEach(function(file) {
   file = path.basename(file, '.js');
-  externals[`element-ui/src/transitions/${file}`] = `element-ui/lib/transitions/${file}`;
+  externals[`element-ui/src/transitions/${file}`] = `element-ui-international/lib/transitions/${file}`;
 });
 
 externals = [Object.assign({
