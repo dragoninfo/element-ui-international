@@ -1,5 +1,5 @@
 @import "../common/var";
-@import "mixins/rtl";
+@import '../mixins/rtl';
 
 @include b(picker-panel) {
   color: $--color-text-regular;
