@@ -31,7 +31,7 @@
         ["module-resolver", {
           "root": ["element-ui-international"],
           "alias": {
-            "element-ui-international/src": "element-ui/libelement-ui-international
+            "element-ui-international/src": "element-ui-international/lib"
           }
         }]
       ]
