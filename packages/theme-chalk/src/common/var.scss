@@ -998,8 +998,6 @@ $--layouts: (
     'right': right,
     'left': left,
     'scaleX1': scaleX(1),
-    translateX100: translateX(100%),
-    translateX_100: translateX(-100%),
     '+': '',
     '-': '-',
   ),
@@ -1007,8 +1005,6 @@ $--layouts: (
     'right': left,
     'left': right,
     'scaleX1': scaleX(-1),
-    translateX100: translateX(-100%),
-    translateX_100: translateX(100%),
     '+': '-',
     '-': '',
   )

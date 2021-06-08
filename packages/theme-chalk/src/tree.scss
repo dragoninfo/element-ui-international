@@ -23,9 +23,7 @@
     @include turnKeyVal(left,50%);
     top: 50%;
     // transform: translate(-50%, -50%); 
-    @include rtlMixin {
-      transform: translate(#{getDirection('-')}50%, -50%)
-    }
+    @include translateToX('-', 50%, -50%);
     color: $--color-text-secondary;
     font-size: $--font-size-base;
   }
@@ -93,9 +91,7 @@
 
     &.expanded {
       // transform: rotate(90deg);
-      @include rtlMixin {
-        transform: rotate(#{getDirection('+')}90deg);
-      }
+      @include rotateTO('+', 90deg);
     }
 
     &.is-leaf {

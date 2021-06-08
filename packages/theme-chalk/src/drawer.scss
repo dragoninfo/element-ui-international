@@ -12,22 +12,15 @@
 }
 
 @mixin drawer-animation($direction) {
-
   @keyframes #{$direction}-drawer-in {
     0% {
 
       @if $direction == ltr {
-        // transform: translate(-100%, 0px);
-        @include rtlMixin {
-          transform: translate(#{getDirection('-')}100%, 0px);
-        }
+        transform: translate(-100%, 0px);
       }
 
       @if $direction == rtl {
-        // transform: translate(100%, 0px);
-        @include rtlMixin {
-          transform: translate(#{getDirection('+')}100%, 0px);
-        }
+        transform: translate(100%, 0px);
       }
 
       @if $direction == ttb {
@@ -79,17 +72,11 @@
 
     100% {
       @if $direction == ltr {
-        // transform: translate(-100%, 0px);
-        @include rtlMixin {
-          transform: translate(#{getDirection('-')}100%, 0px);
-        }
+        transform: translate(-100%, 0px);
       }
 
       @if $direction == rtl {
-        // transform: translate(100%, 0px);
-        @include rtlMixin {
-          transform: translate(#{getDirection('+')}100%, 0px);
-        }
+        transform: translate(100%, 0px);
       }
 
       @if $direction == ttb {
@@ -102,6 +89,7 @@
     }
   }
 }
+
 
 @mixin animation-in($direction) {
   .el-drawer__open &.#{$direction} {
@@ -196,13 +184,11 @@ $directions: rtl, ltr, ttb, btt;
   }
 
   &.ltr {
-    // left: 0;
-    @include turnKeyVal(left, 0);
+    left: 0;
   }
 
   &.rtl {
-    // right: 0;
-    @include turnKeyVal(right, 0);
+    right: 0;
   }
 
   &.ttb {

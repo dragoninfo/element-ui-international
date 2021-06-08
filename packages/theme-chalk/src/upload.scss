@@ -389,7 +389,7 @@
       @include turnKeyVal(left, 15px);
       // transform: translate(-50%, -50%);
       @include rtlMixin {
-        transform: translate(#{getDirection('-')}50%, -50%)
+        transform: translate(#{getDirection('-')} + 50%, -50%)
       }
       bottom: auto;
       width: 126px;
@@ -482,7 +482,7 @@
       text-align: center;
       // transform: rotate(45deg);
       @include rtlMixin {
-        transform: rotate(#{getDirection('+')}45deg);
+        transform: rotate(#{getDirection('+')}+ 45deg);
       }
       box-shadow: 0 1px 1px #ccc;
 
@@ -491,7 +491,7 @@
         margin-top: 12px;
         // transform: rotate(-45deg);
         @include rtlMixin {
-          transform: rotate(#{getDirection('-')}45deg);
+          transform: rotate(#{getDirection('-')} + 45deg);
         }
       }
     }

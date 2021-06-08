@@ -1,6 +1,6 @@
 {
   "name": "element-ui-international",
-  "version": "2.15.5",
+  "version": "2.16.5",
   "description": "A Component Library for Vue.js.",
   "main": "lib/element-ui-international.common.js",
   "files": [
@@ -121,7 +121,7 @@
     "markdown-it-container": "^2.0.0",
     "mini-css-extract-plugin": "^0.4.1",
     "mocha": "^6.0.2",
-    "node-sass": "^5.0.0",
+    "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss": "^7.0.14",
     "progress-bar-webpack-plugin": "^1.11.0",

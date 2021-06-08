@@ -35,7 +35,7 @@
       @include when(active) {
         // transform: rotate(90deg);
         @include rtlMixin {
-          transform: rotate(#{getDirection('+')}90deg);
+          transform: rotate(#{getDirection('+')} + 90deg);
         }
       }
     }

@@ -105,7 +105,7 @@
     top: $--slider-button-wrapper-offset;
     // transform: translateX(-50%);
     @include rtlMixin {
-      transform: translateX(#{getDirection('-')}50%)
+      transform: translateX(#{getDirection('-')} + 50%)
     }
     background-color: transparent;
     text-align: center;
@@ -161,7 +161,7 @@
     background-color: $--slider-stop-background-color;
     // transform: translateX(-50%);
     @include rtlMixin {
-      transform: translateX(#{getDirection('-')}50%)
+      transform: translateX(#{getDirection('-')} + 50%)
     }
   }
 
@@ -176,7 +176,7 @@
       position: absolute;
       // transform: translateX(-50%);
       @include rtlMixin {
-        transform: translateX(#{getDirection('-')}50%)
+        transform: translateX(#{getDirection('-')} + 50%)
       }
       font-size: 14px;
       color: $--color-info;

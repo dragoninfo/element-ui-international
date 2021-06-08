@@ -15,7 +15,7 @@
   top: 20px;
   // transform: translateX(-50%);
   @include rtlMixin{
-    transform: translateX(#{getDirection('-')}50%)
+    transform: translateX(#{getDirection('-')} + 50%)
   }
   background-color: $--message-background-color;
   transition: opacity 0.3s, transform .4s, top 0.4s;
@@ -126,6 +126,6 @@
   opacity: 0;
   // transform: translate(-50%, -100%);
   @include rtlMixin {
-    transform: translate(#{getDirection('-')}50%, -100%);
+    transform: translate(#{getDirection('-')} + 50%, -100%);
   }
 }

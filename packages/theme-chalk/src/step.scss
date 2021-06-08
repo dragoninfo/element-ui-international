@@ -308,7 +308,7 @@
       &::before {
         // transform: rotate(-45deg) translateY(-4px);
         @include rtlMixin {
-          transform: rotate(#{getDirection('-')}45deg) translateY(-4px);
+          transform: rotate(#{getDirection('-')} + 45deg) translateY(-4px);
         }
         transform-origin: 0 0;
       }
@@ -316,7 +316,7 @@
       &::after {
         // transform: rotate(45deg) translateY(4px);
         @include rtlMixin {
-          transform: rotate(#{getDirection('+')}45deg) translateY(4px);
+          transform: rotate(#{getDirection('+')} + 45deg) translateY(4px);
         }
         transform-origin: 100% 100%;
       }

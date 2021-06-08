@@ -94,7 +94,7 @@
     @include turnKeyVal(right, 0);
     // transform: translateX(100%);
     @include rtlMixin {
-      transform: translateX(#{getDirection('+')}100%);
+      transform: translateX(#{getDirection('+')} + 100%);
     }
   }
 
@@ -103,7 +103,7 @@
     @include turnKeyVal(left, 0);
     // transform: translateX(-100%);
     @include rtlMixin {
-      transform: translateX(#{getDirection('-')}100%);
+      transform: translateX(#{getDirection('-')} + 100%);
     }
   }
 }

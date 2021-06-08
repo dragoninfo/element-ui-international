@@ -67,3 +67,26 @@
     #{$name}-#{getDirection(right)}: $rightVal;
   }
 }
+
+// x轴镜像
+@mixin translateToX($uint, $Xval, $Yval) { // @include translateToX('-', 50%, -50%); ==> transform: translate(-50%, -50%); 
+  @include rtlMixin {
+    @if $Yval =='' {
+      $value: getDirection($uint) + $Xval;
+      $value2: translateX(#{$value});
+      transform: $value2;
+    }
+    @else {
+      $value: getDirection($uint) + $Xval;
+      $value2: translate(#{$value}, $Yval);
+      transform: $value2;
+    }
+  }
+}
+
+@mixin rotateTO($uint, $val) {
+  @include rtlMixin {
+    $value: getDirection($uint) + $val;
+    transform: rotate(#{$value});;
+  }
+}

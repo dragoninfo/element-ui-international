@@ -18,7 +18,7 @@
           aria-labelledby="el-drawer__title"
           :aria-label="title"
           class="el-drawer"
-          :class="[direction, customClass]"
+          :class="[isRtl, customClass]"
           :style="isHorizontal ? `width: ${drawerSize}` : `height: ${drawerSize}`"
           ref="drawer"
           role="dialog"
@@ -49,6 +49,7 @@
 <script>
 import Popup from 'element-ui-international/src/utils/popup';
 import emitter from 'element-ui-international/src/mixins/emitter';
+import { isRtl } from 'element-ui-international/src/utils/util';
 
 export default {
   name: 'ElDrawer',
@@ -118,7 +119,18 @@ export default {
     },
     drawerSize() {
       return typeof this.size === 'number' ? `${this.size}px` : this.size;
+    },
+    // TODO: rtl el-drawer 抽屉 wenzc -- start
+    isRtl() {
+      let val;
+      if (isRtl() && (this.direction === 'rtl' || this.direction === 'ltr')) {
+        val = this.direction === 'rtl' ? 'ltr' : 'rtl';
+      } else {
+        val = this.direction;
+      }
+      return val;
     }
+    // TODO: rtl el-drawer 抽屉 wenzc -- end
   },
   data() {
     return {
