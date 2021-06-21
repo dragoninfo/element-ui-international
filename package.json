@@ -1,6 +1,6 @@
 {
   "name": "element-ui-international",
-  "version": "2.16.5",
+  "version": "2.16.7",
   "description": "A Component Library for Vue.js.",
   "main": "lib/element-ui-international.common.js",
   "files": [

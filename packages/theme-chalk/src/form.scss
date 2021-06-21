@@ -103,7 +103,9 @@
     @include turnNameKey(text-align,right);
     vertical-align: middle;
     // float: left;
-    @include turnNameKey(float,left);
+    :not(.el-form--label-top){
+      @include turnNameKey(float,left);
+    }
     font-size: $--form-label-font-size;
     color: $--color-text-regular;
     line-height: 40px;
