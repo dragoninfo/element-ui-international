@@ -45,7 +45,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:dragoninfo/element-ui-international-ar.git"
+    "url": "git+ssh://git@github.com:dragoninfo/element-ui-international.git"
   },
   "homepage": "http://element.eleme.io",
   "keywords": [
